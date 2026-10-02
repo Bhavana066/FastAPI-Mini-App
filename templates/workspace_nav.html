@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg workspace-navbar bg-white sticky-top">
+  <div class="container-fluid container-xl">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="/dashboard">
+      <span class="brand-mark"><i class="bi bi-mortarboard-fill" aria-hidden="true"></i></span>
+      <span>StudyAI</span>
+    </a>
+    <div class="d-flex align-items-center gap-2 order-lg-3">
+      <span class="workspace-user"><i class="bi bi-person-circle" aria-hidden="true"></i><span class="d-none d-sm-inline" data-workspace-username>Study space</span></span>
+      <button class="btn btn-light workspace-logout" type="button" data-logout aria-label="Log out" title="Log out">
+        <i class="bi bi-box-arrow-right" aria-hidden="true"></i><span class="d-none d-sm-inline">Log out</span>
+      </button>
+      <button class="navbar-toggler workspace-menu-toggle d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#workspaceMenu" aria-controls="workspaceMenu" aria-label="Open navigation">
+        <i class="bi bi-list" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div class="navbar-nav flex-row gap-2 ms-4 me-auto d-none d-lg-flex">
+      <a class="nav-link workspace-link" href="/dashboard">Dashboard</a>
+      <a class="nav-link workspace-link" href="/upload">Upload PDF</a>
+    </div>
+  </div>
+</nav>
+<div class="offcanvas offcanvas-start workspace-offcanvas" tabindex="-1" id="workspaceMenu" aria-labelledby="workspaceMenuLabel">
+  <div class="offcanvas-header">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="/dashboard" id="workspaceMenuLabel">
+      <span class="brand-mark"><i class="bi bi-mortarboard-fill" aria-hidden="true"></i></span>StudyAI
+    </a>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close navigation"></button>
+  </div>
+  <div class="offcanvas-body">
+    <nav class="nav flex-column gap-1">
+      <a class="nav-link workspace-link" href="/dashboard"><i class="bi bi-grid-1x2 me-2" aria-hidden="true"></i>Dashboard</a>
+      <a class="nav-link workspace-link" href="/upload"><i class="bi bi-cloud-arrow-up me-2" aria-hidden="true"></i>Upload PDF</a>
+    </nav>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login · StudyAI</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="/static/style.css?v=5" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="/"><i class="bi bi-mortarboard-fill me-2"></i>StudyAI</a>
+    </div>
+  </nav>
+  <main class="auth-layout">
+        <div class="card auth-panel shadow">
+          <span class="auth-mark"><i class="bi bi-person-check" aria-hidden="true"></i></span>
+          <h2 class="fw-bold mb-1">Welcome back</h2>
+          <p class="text-secondary mb-4">Login to continue learning.</p>
+          <div id="alertBox" role="status" aria-live="polite"></div>
+          <form id="loginForm">
+            <label class="form-label" for="username">Email or username</label>
+            <input class="form-control mb-3" id="username" name="username" autocomplete="username" required>
+            <label class="form-label" for="password">Password</label>
+            <div class="input-group mb-4">
+              <input class="form-control" type="password" name="password" id="password" required>
+              <button class="btn btn-outline-secondary" type="button" data-toggle-password="password" aria-label="Show password" title="Show password">
+                <i class="bi bi-eye" aria-hidden="true"></i>
+              </button>
+            </div>
+            <button class="btn btn-primary w-100 rounded-pill" type="submit">
+              <span class="btn-text">Login</span>
+              <span class="spinner-border spinner-border-sm d-none" role="status"></span>
+            </button>
+          </form>
+          <div class="auth-divider" role="separator" aria-label="or"><span>OR</span></div>
+          <a class="google-signin" href="/auth/google"><i class="bi bi-google" aria-hidden="true"></i><span>Continue with Google</span></a>
+          <p class="mt-4 mb-0 text-center">No account? <a href="/register">Create one</a></p>
+        </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/script.js?v=5"></script>
+</body>
+</html>
